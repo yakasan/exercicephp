@@ -25,7 +25,7 @@
             $tabX[$value] = sin($value);
         }
 
-        foreach ($tabX as $key => $value) {
+        foreach ($tabX as $key => $value ) {
             echo "<tr><td>$key</td> <td>$value</td></tr>";
         }
         ?>

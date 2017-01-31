@@ -9,7 +9,9 @@
 <div id="content">
 
     <h2> Sujets</h2>
-    <a href="PHP_3_TP_1.docx">Sujet Version Doc</a>
+    <a href="PHP_3_TP_1.docx">Sujet Exercices 1 à 3</a>
+    <br>
+    <a href="PHP_3_TP_1.docx">Sujet Exercices 4 à 7</a>
     <br>
     <h2>Reponses</h2>
     <a href="./exercices/ex1.php">Exercice 1</a>
@@ -17,6 +19,14 @@
     <a href="./exercices/ex2.php"> Exercice 2 </a>
     <br>
     <a href="./exercices/ex3.php"> Exercice 3 </a>
+    <br>
+    <a href="./exercices/ex4.php">Exercice 4</a>
+    <br>
+    <a href="./exercices/ex5.php"> Exercice 5 </a>
+    <br>
+    <a href="./exercices/ex6.php"> Exercice 6 </a>
+    <br>
+    <a href="./exercices/ex7.php"> Exercice 7 </a>
     <br>
 
     <h2>Corrigés</h2>
