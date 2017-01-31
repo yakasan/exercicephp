@@ -35,7 +35,9 @@ span{
     padding:5px;
     font-family:arial;
 }
-
+#content2{
+    color: white;
+}
 .text{
     color:white;
     font-family: arial;
