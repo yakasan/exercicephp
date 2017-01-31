@@ -15,10 +15,10 @@
 
 
         foreach ($mailList as $ind => $mail) {
-            $dom = explode("@", $mail);
-            $domaine[] = $dom[1];
+            $mailExtension = explode("@", $mail);
+            $domainName[] = $mailExtension[1];
         }
-        $mailCount = array_count_values($domaine);
+        $mailCount = array_count_values($domainName);
 
         $total = array_sum($mailCount);
         foreach ($mailCount as $provider => $nb) {

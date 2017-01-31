@@ -1,34 +1,37 @@
 <body>
 <?php include("../inc/header.inc.php"); ?>
 <div id="header">
-        <h1 class="typo">Exercice 2 : Tableau variant
-        </h1>
-        </br>
+    <h1 class="typo">Exercice 2 : Tableau variant
+    </h1>
+    </br>
 </div>
 <div id="content">
+
+    <table>
+        <h2>Fonction sinus</h2>
+        <tr>
+            <th> X</th>
+            <th> sin( X )</th>
+        </tr>
         <?php
 
 
-        $tab = range(0, 63);
-        foreach ($tab as $ind => $val) {
-            $tab[$ind] = $tab[$ind] / 10;
+        $tableau = range(0, 63);
+        foreach ($tableau as $indice => $value) {
+            $tableau[$indice] = $tableau[$indice] / 10;
         }
-        foreach ($tab as $ind => $val) {
-            $val = (string)$val;
-            $tabsin[$val] = sin($val);
+        foreach ($tableau as $indice => $value) {
+            $value = (string)$value;
+            $tabX[$value] = sin($value);
         }
-        echo "<table>";
-        echo "<caption><b><h2>Tableau de valeurs de la fonction 
-sinus</h2></b></caption>";
-        echo "<tr> <th> X </th> <th> sin( X )</th> </tr>";
-        foreach ($tabsin as $cle => $val) {
-            echo "<tr><td>$cle</td> <td>$val</td></tr>";
-        }
-        echo "</table>";
-        echo "<hr />";
 
-
+        foreach ($tabX as $key => $value) {
+            echo "<tr><td>$key</td> <td>$value</td></tr>";
+        }
         ?>
+
+    </table>
+
 
 </div>
 
