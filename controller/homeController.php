@@ -20,7 +20,7 @@ if (isset($_POST['login'],$_POST['password'])){
     }else{
 
         echo "Mot de Passe/Utilisateur incorrect.";
-        header("Location: index.html");
+        header("Location: ../index.html");
     }
 }
 
@@ -29,7 +29,7 @@ if (isset($_SESSION['login']) && $_SESSION['admin']==1){
     if (isset($_GET['deco'])){
         $_SESSION = array();
         session_destroy();
-        header("Location: ./index.html");
+        header("Location: ../index.html");
 
     }
     if (isset($_POST['ancien'],$_POST['nouveau'],$_POST['nouveau2'])){
@@ -40,7 +40,7 @@ if (isset($_SESSION['login']) && $_SESSION['admin']==1){
         $passnouveau2=$_POST['nouveau2'];
         if ($passnouveau!=$passnouveau2){
             echo "Les nouveaux mots de passe ne correspondent pas entre eux.";
-            header("Location: indexx.php?page=1");
+            header("Location: ../indexx.php?page=1");
         }
         $passverif=verifpass($log, $passancien);
         if ($passverif){
@@ -49,7 +49,7 @@ if (isset($_SESSION['login']) && $_SESSION['admin']==1){
 
         }else{
             echo "Mot de passe incorrect";
-            header("Location: indexx.php?page=1");
+            header("Location: ../indexx.php?page=1");
         }
 
 

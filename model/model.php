@@ -17,7 +17,6 @@ class model
     function __construct() {
         $this->connexion = new PDO($this->dns, $this->user, $this->pass);
     }
-    //permet la connection en tant qu'admin
     function auth($login, $password){
         $bdd=$this->connexion;
         $resp=$bdd->query("SELECT login, password FROM administrator");
@@ -34,7 +33,6 @@ class model
         }
 
     }
-    //verification du mot de passe
     function verifpass($log,$pass){
         $bdd=$this->connexion;
         $resp=$bdd->query("SELECT password FROM administrator WHERE login='$log'");
@@ -47,7 +45,6 @@ class model
             return FALSE;
         }
     }
-    //modification du mot de passe
     function modifpass($log, $pass){
         $result=$this->connexion->query("UPDATE administrator SET password='$pass' WHERE login='$log'");
     }
